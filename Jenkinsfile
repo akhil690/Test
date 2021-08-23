@@ -13,4 +13,7 @@ node {
     step {
     echo"Build my project successfully"
      }
+     post {
+        always {
+           archiveartifacts: archiveArtifacts artifacts: 'Jenkinsfile', followSymlinks: false
   }
