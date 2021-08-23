@@ -1,12 +1,16 @@
 node {
+   
+  def mvnHome -tool 'maven-3.3.9'
   
   stage('SCM Checkout'){
-     git credentialid: 'akhilhub', url: 
+    steps {
+      echo"make checkout"
+    git credentialsid: 'akhilhub', url: https://github.com/akhil690/Test.git
 
-  //branch name from Jenkins environment variables
-  echo "My branch is: ${env.BRANCH_NAME}"
-
-  def flavor = flavor(env.BRANCH_NAME)
-  echo "Building flavor ${flavor}"
+     }
   
-  
+  stage('Build project'){
+    step {
+    echo"Build my project successfully"
+     }
+  }
