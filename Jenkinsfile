@@ -1,6 +1,4 @@
 node {
-   
-  def mvnHome -tool 'maven-3.3.9'
   
   stage('SCM Checkout'){
     steps {
