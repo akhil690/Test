@@ -16,4 +16,5 @@ node {
      post {
         always {
            archiveartifacts: archiveArtifacts artifacts: 'Jenkinsfile', followSymlinks: false
+        }
   }
