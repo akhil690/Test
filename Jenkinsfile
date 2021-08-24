@@ -14,5 +14,13 @@ node{
     echo"Test is my succesfuly"
   }
   
-  stage('Deployment Project'){
+  stage('Deployment Project')
+    
+    echo"Deploy the project succesfully "
+  }
+  stage('Relese the project succesfully'){
+    
+    echo"Finally ready to release my groovy script"
+  }
+}
     
