@@ -1,16 +1,18 @@
-pipeline {
-  
-  agent any 
-  
-  stages{
-    stage('Multi-branch-pipeline'){
-     steps {
-    echo"build my Multi branch pipeline"
+node{
+  stage('SCM Checkout'){
+      echo"make checkout"
+    //git credentials: : 'akhil690', url: 'https://github.com/akhil690/Test.git'
     }
+  
+  stage('Build project'){
+    
+    echo"Build my project successfully"
+    }
+  
+  stage('Test project'){
+    
+    echo"Test is my succesfuly"
   }
-   stage('Build my master'){
-     steps {
-     echo"Build the Jenkinsfile in my master"
-     }
-        } 
-          }
+  
+  stage('Deployment Project'){
+    
