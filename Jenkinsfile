@@ -11,9 +11,11 @@ node {
     }
   
   stage('Test project'){
+    
     echo"Test is my succesfuly"
   }
   
   stage('Deployment Project'){
+    
     echo"Deploy the project succesfully "
   }
