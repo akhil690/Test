@@ -1,8 +1,10 @@
 pipeline {
+  
   agent any 
   
-  stage('Multi-branch-pipeline)'{
-    steps {
+  stages{
+    stage('Multi-branch-pipeline)'{
+     steps {
     echo"build my Multi branch pipeline"
     }
   }
@@ -10,5 +12,5 @@ pipeline {
      steps {
      echo"Build the Jenkinsfile in my master"
      }
-        }
-}
+        } 
+          }
