@@ -21,6 +21,7 @@ node{
   stage('Relese the project succesfully'){
     
     echo"Finally ready to release my groovy script"
+    
   }
 }
     
