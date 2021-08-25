@@ -23,4 +23,5 @@ node {
     
     echo"Finally ready to release my groovy script"
   }
+}
 
