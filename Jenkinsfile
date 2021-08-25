@@ -7,12 +7,12 @@ node {
   
   stage('Build project'){
     
-    echo"Build my project successfully"
+    echo"Build the sccessfully"
     }
   
   stage('Test project'){
     
-    echo"Test is my succesfuly"
+    echo"Test it succesfully"
   }
   
   stage('Deployment Project'){
@@ -23,4 +23,4 @@ node {
     
     echo"Finally ready to release my groovy script"
   }
-}
+
