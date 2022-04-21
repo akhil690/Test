@@ -1,0 +1,16 @@
+apiVersion: bash/v1
+kind: job
+metadata: 
+  name: myjob
+spec:
+  replicas: 3
+  selector: 
+    matchlabel: 
+    myapp: nginx
+spec: 
+  containers:
+  - name: nginx-cone
+    image: nginx
+    resources:
+      limits:
+        cpu: "1"      
